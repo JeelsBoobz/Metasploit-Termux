@@ -6,10 +6,10 @@ gem install bundler
 gem install nokogiri -- --using-system-libraries
 bundle install -j5
 $PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
-cd $HOME/metasploit-framework/config
-curl -LO https://Auxilus.github.io/database.yml
-mkdir -p $PREFIX/var/lib/postgresql
-initdb $PREFIX/var/lib/postgresql
-pg_ctl -D $PREFIX/var/lib/postgresql start
-createuser msf
-createdb msf_database
+# cd $HOME/metasploit-framework/config
+# curl -LO https://Auxilus.github.io/database.yml
+# mkdir -p $PREFIX/var/lib/postgresql
+# initdb $PREFIX/var/lib/postgresql
+# pg_ctl -D $PREFIX/var/lib/postgresql start
+# createuser msf
+# createdb msf_database
